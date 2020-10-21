@@ -6,7 +6,9 @@ module.exports = (req, res) => {
     .send(
       `Current Time is ${
         currentDate.getHours() +
+        ":" +
         currentDate.getMinutes() +
+        ":" +
         currentDate.getSeconds()
       }!`
     );
