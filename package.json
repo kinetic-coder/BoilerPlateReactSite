@@ -1,14 +1,18 @@
 {
-  "name": "baseline-react-template",
+  "name": "react",
   "version": "1.0.0",
-  "description": "Uses Material UI",
-  "keywords": [],
+  "description": "React example starter project",
+  "keywords": [
+    "react",
+    "starter"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "4.11.0",
     "@material-ui/icons": "4.9.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-router-dom": "5.2.0",
     "react-scripts": "3.4.3"
   },
   "devDependencies": {

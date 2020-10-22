@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import ButtonAppBar from "./components/ButtonAppBar";
+import ButtonAppBar from "./ButtonAppBar";
 
 class Page extends Component {
   render() {
