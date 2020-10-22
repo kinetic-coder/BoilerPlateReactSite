@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 
-import { useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,12 +21,12 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function ButtonAppBar() {
+const ButtonAppBar = () => {
   const classes = useStyles();
-  const history = useHistory();
 
   const navigateTo = (newLocation) => {
-    console.log(`Navigating to ${newLocation}`);
+    console.log(newLocation);
+    return <Redirect to={newLocation} />;
   };
 
   return (
@@ -57,4 +57,6 @@ export default function ButtonAppBar() {
       </AppBar>
     </div>
   );
-}
+};
+
+export default ButtonAppBar;

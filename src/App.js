@@ -12,8 +12,8 @@ export default function App() {
     <Page>
       <Router>
         <Switch>
-          <Route path="/about" component={AboutPage} />
           <Route path="/" component={HomePage} exact />
+          <Route path="/about" component={AboutPage} />
         </Switch>
       </Router>
     </Page>
